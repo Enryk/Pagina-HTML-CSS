@@ -13,17 +13,15 @@
 <body class="main-bg">
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
-                <img class="img-logo" src="assets/img/logo.png">
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="#pagUm">Introducao</a></li>
-                    <li><a href="#pagDois">Frase Steve Jobs</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
+            <img class="img-logo" src="assets/img/logo.png" alt="Logo do CSS3">
+                <nav>
+                    <ul>
+                        <li><a href="#pagUm">Introducao</a></li>
+                        <li><a href="#pagDois">Frase Steve Jobs</a></li>
+                        <li><a href="#pagTres">Galeria</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
         </div>
     </aside>
 
@@ -32,8 +30,8 @@
     <section id="pagUm" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>Manter a saúde em dia e um corpo saudável requer muita dedicação. Seja por meio dos treinos, da alimentação ou da rotina, é importante se doar e dar o melhor de si em tudo o que se propuser a fazer.</h2>
-                    <p></p>
+                <h2 id="Texto1">Manter a saúde em dia e um corpo saudável requer muita dedicação. Seja por meio dos treinos, 
+                    da alimentação ou da rotina, é importante se doar e dar o melhor de si em tudo o que se propuser a fazer.</h2>
             </div>
         </div>
     </section>
@@ -41,13 +39,57 @@
     <section id="pagDois" class="white-bg section">
         <div class="main-content pagDois-content">
             <div class="intro-img">
-                <img src="assets/img/SteveJobs.jfif">
+                <img src="assets/img/SteveJobs.jfif" alt="Imagem de uma foto do Steve Jobs com uma frase citada por ele">
             </div>
                 <div class="intro-text-content" id="fraseSteve">
                     <h2>Como dizia Steve Jobs:</h2>
-                        <p>Por mais que os obstáculos sejam difíceis, não podemos perder a fé e desistir. Foco e persistência é o segredo!</div></p>
+                        <p>Por mais que os obstáculos sejam difíceis, não podemos perder a fé e desistir. Foco e persistência é o segredo!</p>
                 </div>
         </div>        
+    </section>
+
+    <!-- <section id="pagTres">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <h1>A</h1>
+                    </div>
+
+                    <div class="back">
+                        <h1>B</h1>
+                    </div> 
+                </div>
+            </div>    
+    </section> -->
+    
+    <section id="pagTres" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Galeria</h2>
+            <p class="grid-description"></p>
+            
+            <div class="grid">
+                <div class="gallery-img">
+                  <img src="assets/img/foto1.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="gallery-img">
+                  <img src="assets/img/foto2.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="gallery-img">
+                  <img src="assets/img/foto3.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="gallery-img">
+                  <img src="assets/img/foto4.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="gallery-img">
+                  <img src="assets/img/foto5.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="gallery-img">
+                  <img src="assets/img/foto6.jpg" alt="Foto de uma paisagem" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
     </section>
 </body>
 </html>
