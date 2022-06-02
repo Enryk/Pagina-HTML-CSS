@@ -10,16 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="main-bg">
+<body>
+    <!-- <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label> -->
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <img class="img-logo" src="assets/img/logo.png" alt="Logo do CSS3">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <img class="img-logo" src="assets/img/logo.png" alt="Logo do CSS3">
+            </h1>
                 <nav>
-                    <ul>
-                        <li><a href="#pagUm">Introducao</a></li>
-                        <li><a href="#pagDois">Frase Steve Jobs</a></li>
-                        <li><a href="#pagTres">Galeria</a></li>
-                        <li><a href="#">Contato</a></li>
+                    <ul onclick="getElementById('close-menu').checked = false;">
+                        <li><a href="#one">Introducao</a></li>
+                        <li><a href="#two">Frase Steve Jobs</a></li>
+                        <li><a href="#three">Galeria</a></li>
+                        <li><a href="#for">Contato</a></li>
                     </ul>
                 </nav>
         </div>
@@ -27,7 +31,7 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="pagUm" class="intro main-bg section">
+    <section id="one" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2 id="Texto1">Manter a saúde em dia e um corpo saudável requer muita dedicação. Seja por meio dos treinos, 
@@ -36,61 +40,57 @@
         </div>
     </section>
 
-    <section id="pagDois" class="white-bg section">
-        <div class="main-content pagDois-content">
-            <div class="intro-img">
+    <section id="two" class="two-white-bg section">
+        <div class="two-main-content two-content">
+            <div class="two-img">
                 <img src="assets/img/SteveJobs.jfif" alt="Imagem de uma foto do Steve Jobs com uma frase citada por ele">
             </div>
-                <div class="intro-text-content" id="fraseSteve">
+                <div class="two-intro-text-content" id="fraseSteve">
                     <h2>Como dizia Steve Jobs:</h2>
                         <p>Por mais que os obstáculos sejam difíceis, não podemos perder a fé e desistir. Foco e persistência é o segredo!</p>
                 </div>
         </div>        
     </section>
+    
+    <section id="three" class="grid-one three-white-bg section">
+        <div class="three-main-content grid-one-content">
+            <h2 class="grid-main-heading">Fotos da cidade de Guapé MG</h2>
+            <p class="grid-description">Cidade do interior de Minas Gerias, banhada pelo rio São Francisco.</p>
+            
+            <div class="grid">
+                <div class="galeria-img">
+                  <img src="assets/img/foto1.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="galeria-img">
+                  <img src="assets/img/foto2.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="galeria-img">
+                  <img src="assets/img/foto3.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="galeria-img">
+                  <img src="assets/img/foto4.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="galeria-img">
+                  <img src="assets/img/foto5.jpg" alt="Foto de uma paisagem" />
+                </div>
+                <div class="galeria-img">
+                  <img src="assets/img/foto6.jpg" alt="Foto de uma paisagem" />
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- <section id="pagTres">
+          <!-- <section id=""> ( Usar no contato )
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper">
                     <div class="front">
                         <h1>A</h1>
                     </div>
-
                     <div class="back">
                         <h1>B</h1>
                     </div> 
                 </div>
             </div>    
     </section> -->
-    
-    <section id="pagTres" class="grid-one white-bg section">
-        <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Galeria</h2>
-            <p class="grid-description"></p>
-            
-            <div class="grid">
-                <div class="gallery-img">
-                  <img src="assets/img/foto1.jpg" alt="Foto de uma paisagem" />
-                </div>
-                <div class="gallery-img">
-                  <img src="assets/img/foto2.jpg" alt="Foto de uma paisagem" />
-                </div>
-                <div class="gallery-img">
-                  <img src="assets/img/foto3.jpg" alt="Foto de uma paisagem" />
-                </div>
-                <div class="gallery-img">
-                  <img src="assets/img/foto4.jpg" alt="Foto de uma paisagem" />
-                </div>
-                <div class="gallery-img">
-                  <img src="assets/img/foto5.jpg" alt="Foto de uma paisagem" />
-                </div>
-                <div class="gallery-img">
-                  <img src="assets/img/foto6.jpg" alt="Foto de uma paisagem" />
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-    </section>
 </body>
 </html>
-
