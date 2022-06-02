@@ -289,6 +289,50 @@ svg {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
+.for-main-bg {
+    background-image: url('../img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: #000066;
+}
+.for-intro-text-content h2{
+    box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
+
+.for-main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.for-intro-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.for-intro-text-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.for-img {
+    display: flex;
+    justify-content: center;
+}
+
+.for-img img {
+    width: 30%;
+    height: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
 .flip-container {
     perspective: 1000;
 }
@@ -298,8 +342,8 @@ svg {
 }
 
 .flip-container, .front, .back {
-    width: 320px;
-    height: 480px;
+    width: 300px;
+    height: 300px;
 }
 
 .flipper {
