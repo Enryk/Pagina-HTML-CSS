@@ -327,6 +327,10 @@ svg {
 .for-img img {
     width: 30%;
     height: auto;
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
 }
 
 .contact-form {
@@ -365,4 +369,70 @@ svg {
 
 .back {
     transform: rotateY(180deg);
+}
+
+.contato-form {
+    grid-column: span 2;
+}
+
+.contato-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-grupo {
+    flex: 1 1 320px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    box-shadow: 0 0 5px 3px var(--black-color);
+}
+
+.full-largura {
+    width: 100%;
+    flex: 1 1 100%
+}
+
+.form-grupo button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--black-color);
+    padding: 1.5rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-grupo button:hover {
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+.form-grupo ::placeholder {
+    color: var(--light-gray-color);
 }
